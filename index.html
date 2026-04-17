@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article class="profile-card" data-testid="test-profile-card">
+            <!-- Avatar -->
+            <figure class="profile-figure">
+                <img src="image/dread down.jpeg" alt="portrait of Habeeb Taiwo" data-testid="test-user-avatar"/>
+                <figcaption class="visually-hidden">Profile picture of Habeeb Taiwo</figcaption>
+            </figure>
+
+            <div class="profile-content">
+
+                <!-- Header -->
+                 <header>
+                    <h2 data-testid="test-user-name">Habeeb Taiwo</h2>
+                 </header>
+                 <!-- Bio -->
+                 <p data-testid="test-user-bio">
+                    Frontend developer focused on building responsive, accessible, and user friendly interfaces using modern web standards. 
+                 </p>
+                 <!-- Time -->
+                 <p class="time">
+                    Current time (ms): <span id="time" data-testid="test-user-time" aria-live="polite"></span>
+                 </p>
+
+                 <!-- social links -->
+                  <nav aria-label="Social media links" data-testid="test-user-social-links">
+                    <ul class="social-links">
+                        <li> <a href="https://x.com/Badboy_Vado" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">X</a></li>
+                        <li> <a href="https://github.com/Badboyvado" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">Github</a></li>
+                        <li> <a href="https://instagram.com/badboy_vado" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-instagram">Instagram</a></li>
+                        <li> <a href="https://linkedin.com/in/habeeb-taiwo/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    </ul>
+                  </nav>
+                  <!-- Hobbies -->
+                  <section aria-labelledby="hobbies-heading">
+                    <h3 id="hobbies-heading">Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Vibe Coding</li>
+                        <li>Gaming</li>
+                        <li>Reading comics</li>
+                    </ul>
+                  </section>
+                  <!-- Dislikes -->
+                 <section aria-labelledby="dislikes-heading">
+                    <h3  id="dislikes-heading">Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Slow websites</li>
+                        <li>Messy code</li>
+                        <li>Poor UI</li>
+                        
+                    </ul>
+                 </section>
+            </div>
+        </article>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
